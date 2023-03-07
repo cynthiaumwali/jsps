@@ -10,7 +10,6 @@
     <name>jsps</name>
     <packaging>war</packaging>
 
-
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
@@ -254,14 +253,14 @@
     </dependencies>
     <developers>
         <developer>
-            <name>UJENEZA Divine</name>
-            <email>ujenezadivine@gmail.com</email>
+            <name>Cynthia</name>
+            <email>cynthiaaa877@gmail.com</email>
             <roles>
                 <role>Software Programming Student</role>
             </roles>
         </developer>
     </developers>
-    <inceptionYear>2022</inceptionYear>
+    <inceptionYear>2023</inceptionYear>
     <organization>
         <name>Rwanda Coding Academy</name>
         <url>https://www.rca.ac.rw</url>
