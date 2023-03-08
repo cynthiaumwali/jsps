@@ -1,9 +1,6 @@
 package rw.ac.rca.jsps;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "user")
@@ -14,6 +11,17 @@ public class User {
         this.setEmail(email);
         this.setPassword(apassword);
     }
+    public User(String id, String afname, String alname, String email, String apassword){
+        this.setId(id);
+        this.setFname(afname);
+        this.setLname(alname);
+        this.setEmail(email);
+        this.setPassword(apassword);
+
+    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private String Id;
     private String fname;
     private String lname;
     private String email;
@@ -49,5 +57,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
     }
 }
